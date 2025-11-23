@@ -1,0 +1,23 @@
+{
+  "name": "teste-autom-ticos-prontu-rio-eletr-nico-mrv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TS-DC-UFRPE/teste-autom-ticos-prontu-rio-eletr-nico-mrv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TS-DC-UFRPE/teste-autom-ticos-prontu-rio-eletr-nico-mrv/issues"
+  },
+  "homepage": "https://github.com/TS-DC-UFRPE/teste-autom-ticos-prontu-rio-eletr-nico-mrv#readme",
+  "devDependencies": {
+    "cypress": "^15.7.0"
+  }
+}
