@@ -23,3 +23,22 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('login', () => {
+  
+    cy.fixture('user').then((userData) => { 
+      
+      const user = userData.validUser;
+      
+      cy.visit('/auth/signin'); 
+      cy.url().should('include', '/auth/signin');
+  
+      cy.get('[data-cy="email"]').type(user.username);
+      cy.get('[data-cy="password"]').type(user.password);
+      cy.get('[data-cy="save-button"]').click();
+  
+      cy.url().should('not.include', '/auth/signin');
+      cy.url().should('include', '/dashboard');
+      
+    });
+  });
